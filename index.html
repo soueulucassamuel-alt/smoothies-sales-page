@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Delicious Memory Smoothies — 15 Brain-Boosting Recipes</title>
+<meta name="description" content="A 15-recipe smoothie collection built around the nutrients that support memory and focus. Pair each glass with a two-minute morning meditation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --plum:#3c1424;
+    --wine:#6e2b3a;
+    --wine-light:#8a3b4d;
+    --sage:#a9ad86;
+    --sage-light:#c7cbaf;
+    --ivory:#f6f4ea;
+    --gold:#c9932f;
+    --ink:#241019;
+    --paper:#fbfaf4;
+    --line: rgba(60,20,36,0.14);
+    --shadow: 0 18px 40px rgba(60,20,36,0.16);
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Public Sans', sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Fraunces', serif;
+    font-weight:600;
+    letter-spacing:-0.01em;
+    color:var(--plum);
+    margin:0;
+  }
+  a{color:inherit;}
+  img{max-width:100%;display:block;}
+  .wrap{max-width:1140px;margin:0 auto;padding:0 24px;}
+  .eyebrow{
+    font-family:'Public Sans',sans-serif;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--wine);
+    font-weight:700;
+  }
+
+  /* ---------- NAV ---------- */
+  header.nav{
+    position:sticky; top:0; z-index:50;
+    background:rgba(251,250,244,0.88);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .navbar{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;max-width:1140px;margin:0 auto;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:'Fraunces',serif;font-weight:600;font-size:19px;color:var(--plum);}
+  .brand .dot{width:9px;height:9px;border-radius:50%;background:var(--gold);}
+  .navbar .cta-small{
+    background:var(--wine); color:#fff; padding:10px 20px; border-radius:100px;
+    font-size:14px; font-weight:600; text-decoration:none; white-space:nowrap;
+    transition:background .2s ease, transform .2s ease;
+  }
+  .navbar .cta-small:hover{background:var(--plum); transform:translateY(-1px);}
+
+  /* ---------- HERO ---------- */
+  .hero{
+    position:relative;
+    padding:76px 0 90px;
+    overflow:hidden;
+    background:
+      radial-gradient(1000px 520px at 82% -10%, rgba(169,173,134,0.35), transparent 60%),
+      linear-gradient(180deg,#f6f4ea 0%, #fbfaf4 65%);
+  }
+  .hero-grid{
+    display:grid; grid-template-columns:1.05fr 0.95fr; gap:56px; align-items:center;
+  }
+  .kicker{display:flex;align-items:center;gap:10px;margin-bottom:22px;}
+  .kicker span.line{width:34px;height:1px;background:var(--wine);display:inline-block;}
+  h1.headline{
+    font-size:clamp(38px, 5vw, 62px);
+    line-height:1.03;
+    margin-bottom:22px;
+  }
+  h1.headline em{
+    font-style:italic; color:var(--wine); font-weight:500;
+  }
+  .sub{
+    font-size:18px; line-height:1.6; color:#4a3540; max-width:46ch; margin-bottom:34px;
+  }
+  .hero-ctas{display:flex; gap:16px; align-items:center; flex-wrap:wrap; margin-bottom:28px;}
+  .btn-primary{
+    background:var(--wine); color:#fff; padding:16px 30px; border-radius:100px;
+    font-weight:700; font-size:15.5px; text-decoration:none; display:inline-flex; align-items:center; gap:10px;
+    box-shadow:var(--shadow);
+    transition:transform .2s ease, background .2s ease;
+  }
+  .btn-primary:hover{transform:translateY(-2px); background:var(--plum);}
+  .btn-primary .price{opacity:.85; font-weight:600; text-decoration:line-through; margin-right:2px;}
+  .btn-ghost{
+    color:var(--plum); text-decoration:none; font-weight:600; font-size:15px;
+    border-bottom:1px solid var(--wine); padding-bottom:2px;
+  }
+  .trust-row{display:flex; gap:22px; flex-wrap:wrap; font-size:13.5px; color:#6b5560;}
+  .trust-row strong{color:var(--plum);}
+
+  .hero-art{position:relative;}
+  .hero-card{
+    position:relative; border-radius:28px; overflow:hidden;
+    box-shadow: 0 30px 60px rgba(60,20,36,0.28);
+    transform:rotate(1.4deg);
+    border:10px solid #fff;
+  }
+  .hero-card img{width:100%; height:560px; object-fit:cover; display:block;}
+  .float-badge{
+    position:absolute; left:-22px; bottom:34px;
+    background:#fff; border-radius:18px; padding:16px 18px;
+    box-shadow:var(--shadow);
+    display:flex; align-items:center; gap:12px;
+    transform:rotate(-3deg);
+    max-width:230px;
+  }
+  .float-badge .num{font-family:'Fraunces',serif; font-size:30px; color:var(--wine); font-weight:700;}
+  .float-badge .txt{font-size:12.5px; line-height:1.35; color:#5c4750;}
+
+  /* ---------- RITUAL / INTRO ---------- */
+  .ritual{padding:96px 0; background:var(--paper);}
+  .ritual-grid{display:grid; grid-template-columns:0.42fr 0.58fr; gap:64px; align-items:start;}
+  .ritual h2{font-size:clamp(30px,3.4vw,40px); line-height:1.08; margin-bottom:18px;}
+  .steps{margin-top:34px; display:flex; flex-direction:column; gap:0;}
+  .step{display:flex; gap:20px; padding:22px 0; border-top:1px solid var(--line);}
+  .step:last-child{border-bottom:1px solid var(--line);}
+  .step .mark{font-family:'Fraunces',serif; font-size:15px; color:var(--gold); font-weight:700; padding-top:3px;}
+  .step h4{font-family:'Public Sans',sans-serif; font-weight:700; font-size:16.5px; color:var(--plum); margin-bottom:6px;}
+  .step p{margin:0; font-size:14.5px; line-height:1.6; color:#5c4750;}
+  .ritual-copy p{font-size:16.5px; line-height:1.75; color:#4a3540; margin-bottom:18px;}
+
+  /* ---------- RECIPE INDEX ---------- */
+  .recipes{padding:96px 0; background:linear-gradient(180deg,#3c1424 0%, #4a1a2c 100%); color:#f3ece8;}
+  .recipes .eyebrow{color:var(--gold);}
+  .recipes h2{color:#fff; font-size:clamp(30px,3.6vw,42px); max-width:16ch; margin:14px 0 12px;}
+  .recipes .lead{color:#d9c6cd; font-size:16.5px; max-width:56ch; line-height:1.6; margin-bottom:52px;}
+  .card-grid{
+    display:grid; grid-template-columns:repeat(5, 1fr); gap:18px;
+  }
+  .card{
+    background:rgba(255,255,255,0.04);
+    border:1px solid rgba(255,255,255,0.1);
+    border-radius:18px; overflow:hidden;
+    transition:transform .25s ease, border-color .25s ease;
+  }
+  .card:hover{transform:translateY(-6px); border-color:rgba(201,147,47,0.55);}
+  .card .thumb{aspect-ratio:1/1; overflow:hidden;}
+  .card .thumb img{width:100%; height:100%; object-fit:cover; transition:transform .5s ease;}
+  .card:hover .thumb img{transform:scale(1.08);}
+  .card .meta{padding:14px 14px 16px;}
+  .card .meta .n{font-size:11px; letter-spacing:.1em; color:var(--gold); font-weight:700;}
+  .card .meta h4{font-family:'Fraunces',serif; font-weight:500; font-size:14.5px; line-height:1.3; margin:4px 0 0; color:#f3ece8;}
+
+  /* ---------- SCIENCE ---------- */
+  .science{padding:96px 0; background:var(--ivory);}
+  .science-head{max-width:60ch; margin-bottom:56px;}
+  .science-head h2{font-size:clamp(30px,3.4vw,40px); margin:14px 0 16px;}
+  .science-head p{font-size:16.5px; line-height:1.7; color:#4a3540;}
+  .sci-grid{display:grid; grid-template-columns:repeat(4,1fr); gap:1px; background:var(--line); border:1px solid var(--line); border-radius:20px; overflow:hidden;}
+  .sci-item{background:var(--ivory); padding:32px 26px;}
+  .sci-item .glyph{
+    width:42px; height:42px; border-radius:50%; background:var(--wine); color:#fff;
+    display:flex; align-items:center; justify-content:center; font-family:'Fraunces',serif; font-size:17px; margin-bottom:18px;
+  }
+  .sci-item h4{font-family:'Fraunces',serif; font-weight:600; font-size:18px; color:var(--plum); margin-bottom:8px;}
+  .sci-item p{font-size:14px; line-height:1.6; color:#5c4750; margin:0;}
+
+  /* ---------- WHATS INSIDE / OFFER ---------- */
+  .offer{padding:100px 0; background:var(--paper);}
+  .offer-panel{
+    background:linear-gradient(155deg,#fff 0%, #f6f4ea 100%);
+    border:1px solid var(--line); border-radius:28px; padding:56px;
+    display:grid; grid-template-columns:1fr 0.85fr; gap:56px; align-items:center;
+    box-shadow:var(--shadow);
+  }
+  .offer h2{font-size:clamp(28px,3vw,36px); margin-bottom:18px;}
+  .offer-list{list-style:none; padding:0; margin:0 0 32px; display:flex; flex-direction:column; gap:14px;}
+  .offer-list li{display:flex; gap:12px; align-items:flex-start; font-size:15.5px; color:#4a3540; line-height:1.5;}
+  .offer-list .check{
+    flex:none; width:20px; height:20px; border-radius:50%; background:var(--sage-light);
+    display:flex; align-items:center; justify-content:center; font-size:12px; color:var(--plum); font-weight:700; margin-top:1px;
+  }
+  .price-card{
+    background:var(--plum); color:#fff; border-radius:22px; padding:40px 34px; text-align:center;
+  }
+  .price-card .was{font-size:14px; color:#d9c6cd; text-decoration:line-through;}
+  .price-card .now{font-family:'Fraunces',serif; font-size:52px; font-weight:700; margin:6px 0 4px;}
+  .price-card .now sup{font-size:20px; top:-1.4em;}
+  .price-card .note{font-size:13px; color:#d9c6cd; margin-bottom:26px;}
+  .price-card .btn-primary{width:100%; justify-content:center; background:var(--gold); color:var(--plum); box-shadow:none;}
+  .price-card .btn-primary:hover{background:#e0aa4a;}
+  .price-card .guarantee{margin-top:18px; font-size:12.5px; color:#c9b6bd;}
+
+  /* ---------- FAQ ---------- */
+  .faq{padding:96px 0 60px; background:var(--paper);}
+  .faq h2{font-size:clamp(28px,3vw,36px); margin-bottom:44px;}
+  .faq-grid{display:grid; grid-template-columns:1fr 1fr; gap:28px 56px;}
+  .faq-item{border-top:1px solid var(--line); padding-top:18px;}
+  .faq-item h4{font-family:'Public Sans',sans-serif; font-weight:700; font-size:16px; color:var(--plum); margin-bottom:8px;}
+  .faq-item p{margin:0; font-size:14.5px; line-height:1.65; color:#5c4750;}
+
+  /* ---------- FOOTER ---------- */
+  footer{padding:48px 0 40px; border-top:1px solid var(--line); background:var(--paper);}
+  .foot-row{display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:14px;}
+  .foot-row .brand{font-size:16px;}
+  footer p.disclaimer{font-size:12px; color:#8a7680; max-width:70ch; margin:22px 0 0; line-height:1.6;}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media (max-width: 980px){
+    .hero-grid{grid-template-columns:1fr; gap:44px;}
+    .hero-card img{height:420px;}
+    .ritual-grid{grid-template-columns:1fr;}
+    .card-grid{grid-template-columns:repeat(3,1fr);}
+    .sci-grid{grid-template-columns:repeat(2,1fr);}
+    .offer-panel{grid-template-columns:1fr; padding:36px 26px;}
+    .faq-grid{grid-template-columns:1fr;}
+  }
+  @media (max-width: 560px){
+    .card-grid{grid-template-columns:repeat(2,1fr);}
+    .navbar .cta-small{padding:9px 16px; font-size:13px;}
+    .float-badge{left:12px; bottom:-20px;}
+    .offer-panel{padding:28px 18px;}
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *{transition:none !important;}
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="navbar">
+    <div class="brand"><span class="dot"></span> Delicious Memory Smoothies</div>
+    <a class="cta-small" href="#offer">Get the recipes</a>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <div class="kicker"><span class="line"></span><span class="eyebrow">15 recipes &middot; digital recipe book</span></div>
+      <h1 class="headline">A smoothie ritual<br>for a <em>sharper</em> morning.</h1>
+      <p class="sub">Fifteen brain-nourishing smoothies built around blueberries, avocado, turmeric, and beet — paired with a two-minute breathing practice to start your day clear-headed and calm.</p>
+      <div class="hero-ctas">
+        <a class="btn-primary" href="#offer">Get the full collection →</a>
+        <a class="btn-ghost" href="#recipes">See all 15 recipes</a>
+      </div>
+      <div class="trust-row">
+        <span><strong>15</strong> brain-focused recipes</span>
+        <span><strong>5 min</strong> average prep time</span>
+        <span><strong>PDF</strong> — read on any device</span>
+      </div>
+    </div>
+    <div class="hero-art">
+      <div class="hero-card">
+        <img src="r1.jpg" alt="Blueberry chia smoothie in a glass, topped with rolled oats and frozen blueberries" loading="eager">
+      </div>
+      <div class="float-badge">
+        <div class="num">15</div>
+        <div class="txt">recipes built around memory-supporting nutrients</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="ritual" id="ritual">
+  <div class="wrap ritual-grid">
+    <div class="ritual-copy">
+      <span class="eyebrow">The idea</span>
+      <h2>Two minutes of quiet.<br>One glass of nutrients.</h2>
+      <p>Most mornings ask a lot of your brain before you've given it anything back. This book pairs each smoothie with a short, calming practice — so the ritual, not just the recipe, is what sets the tone for your day.</p>
+      <p>Every recipe was chosen for what it puts to work: antioxidants that guard brain cells from oxidative stress, healthy fats that support cell structure, and the kind of steady energy that doesn't crash by 10am.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="mark">01</div>
+        <div><h4>Sit for two minutes</h4><p>Start with a short, calming breathing practice before you switch the blender on — a simple way to settle your mind and set an intentional tone for the day.</p></div>
+      </div>
+      <div class="step">
+        <div class="mark">02</div>
+        <div><h4>Blend one recipe</h4><p>Each smoothie uses five to eight ingredients you can find at any grocery store, blended in under five minutes.</p></div>
+      </div>
+      <div class="step">
+        <div class="mark">03</div>
+        <div><h4>Know what you're drinking</h4><p>Every recipe includes a full macronutrient breakdown, so you always know exactly what you're feeding your body.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="recipes" id="recipes">
+  <div class="wrap">
+    <span class="eyebrow">What's inside</span>
+    <h2>Fifteen recipes, one glass at a time.</h2>
+    <p class="lead">From a five-minute blueberry chia blend to a golden turmeric-pumpkin smoothie — every recipe in the book, photographed and ready to make.</p>
+    <div class="card-grid">
+      <div class="card"><div class="thumb"><img src="r1.jpg" alt="Blueberry chia smoothie" loading="lazy"></div><div class="meta"><span class="n">01</span><h4>Blueberry Chia Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r2.jpg" alt="Avocado and kiwi green smoothie" loading="lazy"></div><div class="meta"><span class="n">02</span><h4>Avocado &amp; Kiwi Green Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r3.jpg" alt="Nutty apple and banana smoothie" loading="lazy"></div><div class="meta"><span class="n">03</span><h4>Nutty Apple &amp; Banana</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r4.jpg" alt="Tropical smoothie bowl" loading="lazy"></div><div class="meta"><span class="n">04</span><h4>Tropical Smoothie Bowl</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r5.jpg" alt="Pumpkin and turmeric smoothie" loading="lazy"></div><div class="meta"><span class="n">05</span><h4>Pumpkin &amp; Turmeric</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r6.jpg" alt="Sunset smoothie with peach, mango, carrot and beet" loading="lazy"></div><div class="meta"><span class="n">06</span><h4>The Sunset Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r7.jpg" alt="Pistachio and avocado smoothie" loading="lazy"></div><div class="meta"><span class="n">07</span><h4>Pistachio &amp; Avocado</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r8.jpg" alt="Ruby red smoothie with grapes and raspberries" loading="lazy"></div><div class="meta"><span class="n">08</span><h4>The Ruby Red Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r9.jpg" alt="Berry and beet smoothie" loading="lazy"></div><div class="meta"><span class="n">09</span><h4>Berry &amp; Beet Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r10.jpg" alt="Berry chia and yogurt smoothie bowl" loading="lazy"></div><div class="meta"><span class="n">10</span><h4>Berry, Chia &amp; Yogurt</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r11.jpg" alt="Pomegranate strawberry and beet smoothie" loading="lazy"></div><div class="meta"><span class="n">11</span><h4>Pomegranate, Strawberry &amp; Beet</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r12.jpg" alt="Orange velvet smoothie with sweet potato" loading="lazy"></div><div class="meta"><span class="n">12</span><h4>The Orange Velvet Smoothie</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r13.jpg" alt="Chocolate delight smoothie" loading="lazy"></div><div class="meta"><span class="n">13</span><h4>The Chocolate Delight</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r14.jpg" alt="Banana and peanut butter smoothie" loading="lazy"></div><div class="meta"><span class="n">14</span><h4>Banana &amp; Peanut Butter</h4></div></div>
+      <div class="card"><div class="thumb"><img src="r15.jpg" alt="Almond and blueberry smoothie" loading="lazy"></div><div class="meta"><span class="n">15</span><h4>Almond &amp; Blueberry</h4></div></div>
+    </div>
+  </div>
+</section>
+
+<section class="science">
+  <div class="wrap">
+    <div class="science-head">
+      <span class="eyebrow">Why these ingredients</span>
+      <h2>Every recipe is built around a short list of well-studied nutrients.</h2>
+      <p>No exotic superfoods — just produce you already know, chosen for what the research says it does.</p>
+    </div>
+    <div class="sci-grid">
+      <div class="sci-item">
+        <div class="glyph">Bb</div>
+        <h4>Blueberries</h4>
+        <p>Rich in anthocyanins, antioxidants that help protect brain cells from oxidative stress.</p>
+      </div>
+      <div class="sci-item">
+        <div class="glyph">Av</div>
+        <h4>Avocado</h4>
+        <p>Monounsaturated fats and vitamin E support healthy blood flow and protect cell membranes.</p>
+      </div>
+      <div class="sci-item">
+        <div class="glyph">Tm</div>
+        <h4>Turmeric</h4>
+        <p>Curcumin, paired with black pepper for absorption, brings anti-inflammatory support to the mix.</p>
+      </div>
+      <div class="sci-item">
+        <div class="glyph">Bt</div>
+        <h4>Beet &amp; Chia</h4>
+        <p>Nitrates that support blood flow, plus omega-3s that support cell structure and communication.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="offer" id="offer">
+  <div class="wrap">
+    <div class="offer-panel">
+      <div>
+        <span class="eyebrow">Get the book</span>
+        <h2>Everything in one PDF, ready in two minutes.</h2>
+        <ul class="offer-list">
+          <li><span class="check">✓</span> 15 full recipes with exact measurements, step-by-step instructions, and a full macronutrient breakdown</li>
+          <li><span class="check">✓</span> The two-minute morning practice to pair with your smoothie</li>
+          <li><span class="check">✓</span> Printable ingredient photos for every recipe</li>
+          <li><span class="check">✓</span> Instant download — read it on your phone, tablet, or in the kitchen</li>
+        </ul>
+        <a class="btn-ghost" href="#recipes">↑ Back to the recipe index</a>
+      </div>
+      <div class="price-card">
+        <div class="was">Regular price $27</div>
+        <div class="now"><sup>$</sup>9</div>
+        <div class="note">One-time payment &middot; instant PDF download</div>
+        <!-- Replace this href with your checkout / payment link (Gumroad, Stripe, etc.) -->
+        <a class="btn-primary" href="#">Get the recipe book →</a>
+        <div class="guarantee">Secure checkout &middot; delivered by email</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq">
+  <div class="wrap">
+    <h2>Questions before you start blending</h2>
+    <div class="faq-grid">
+      <div class="faq-item">
+        <h4>What format is the book?</h4>
+        <p>A downloadable PDF you can read on your phone, tablet, or computer — or print out for the kitchen counter.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Do I need special equipment?</h4>
+        <p>Just a regular blender. None of the recipes need anything more specialized than that.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Are the ingredients hard to find?</h4>
+        <p>No — everything is available at a typical grocery store. A few recipes call for pantry staples like chia or flax seeds.</p>
+      </div>
+      <div class="faq-item">
+        <h4>Is this medical advice?</h4>
+        <p>No. This book is a recipe collection for general wellness, not a substitute for medical or nutritional advice from a qualified professional.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-row">
+      <div class="brand">Delicious Memory Smoothies</div>
+      <div class="eyebrow">15 recipes &middot; digital download</div>
+    </div>
+    <p class="disclaimer">This page is a recipe collection intended for general wellness purposes and does not provide medical advice. Consult a qualified healthcare professional before making significant changes to your diet, especially if you have an existing health condition.</p>
+  </div>
+</footer>
+
+</body>
+</html>
